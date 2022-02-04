@@ -24,8 +24,8 @@ pipeline {
         stage('Build Phase') {
             steps {
                 echo 'Build Phase'
-                sh 'npm run build --prod'
-                //sh 'npm run build'
+                //sh 'npm run build --prod'
+                sh 'npm run build'
             }
         }
         stage('Deployment Phase') {
